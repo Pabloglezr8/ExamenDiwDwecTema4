@@ -2,6 +2,7 @@
  import { Deportivo } from "./deportivo.js";
  
 const resultadoContainer = document.createElement('div')
+resultadoContainer.className = "container";
 document.body.appendChild(resultadoContainer);
 
  export function mostrarResultado(dato){
@@ -9,12 +10,14 @@ document.body.appendChild(resultadoContainer);
  }
 
  const vehículo1 = new Vehiculo('BMW', 'CLK', 'Rojo', 1992, 2400)
+ mostrarResultado(`<br><p class="title">-----Vehículo1-----</p>`)
  vehículo1.mostrarDatos();
  vehículo1.arrancar()
  vehículo1.acelerar(140);
  vehículo1.frenar();
-
+ 
  const deportivo1 = new Deportivo('Ferrari', 'Spider', 'Amarillo', 2020, 4000, 500)
+ mostrarResultado(`<br><p class="title">----Deportivo1----</p>`)
  deportivo1.mostrarDatos();
  deportivo1.arrancar()
  deportivo1.acelerar(140);

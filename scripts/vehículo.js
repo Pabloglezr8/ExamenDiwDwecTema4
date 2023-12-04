@@ -16,7 +16,7 @@ export class Vehiculo{
     }
 
     mostrarDatos(){
-        const messaje = `<br><p>La marca es: ${this.#marca}</p>
+        const messaje = `<p>La marca es: ${this.#marca}</p>
                             <p>La marca es: ${this.#modelo}</p>
                             <p>El modelo: ${this.#color}</p>
                             <p>El año de la fabricación es: ${this.#anioFabricacion}</p>
