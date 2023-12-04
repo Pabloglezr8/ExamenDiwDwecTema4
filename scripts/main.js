@@ -12,12 +12,12 @@ document.body.appendChild(resultadoContainer);
     resultadoContainer.innerHTML += `<p>${dato}</p>`;
  }
 
- const vehículo1 = new Vehiculo('BMW', 'CLK', 'Rojo', 1992, 2400)
+ const vehiculo1 = new Vehiculo('BMW', 'CLK', 'Rojo', 1992, 2400)
  mostrarResultado(`<br><p class="title">-----Vehículo1-----</p>`)
- vehículo1.mostrarDatos();
- vehículo1.arrancar()
- vehículo1.acelerar(140);
- vehículo1.frenar();
+ vehiculo1.mostrarDatos();
+ vehiculo1.arrancar()
+ vehiculo1.acelerar(140);
+ vehiculo1.frenar();
  
  const deportivo1 = new Deportivo('Ferrari', 'Spider', 'Amarillo', 2020, 4000, 500)
  mostrarResultado(`<br><p class="title">----Deportivo1----</p>`)
@@ -28,20 +28,20 @@ document.body.appendChild(resultadoContainer);
  deportivo1.activarModDeportivo()
 
  const vehiculoObjeto = {
-    marca: 'BMW',
-    modelo: 'CLK',
-    color: 'Rojo',
-    anioFabricacion: 1992,
-    cilindrada: 2400,
+    marca: vehiculo1.marca,
+    modelo: vehiculo1.modelo,
+    color: vehiculo1.color,
+    anioFabricacion: vehiculo1.anioFabricacion,
+    cilindrada: vehiculo1.cilindrada,
  }
 
  const deportivoObjeto = {
-    marca: 'Ferrari',
-    modelo: 'Spider',
-    color: 'Amarillo',
-    anioFabricacion: 2020,
-    cilindrada: 4000,
-    potencia: 500,
+    marca: deportivo1.marca,
+    modelo: deportivo1.modelo,
+    color: deportivo1.color,
+    anioFabricacion: deportivo1.anioFabricacion,
+    cilindrada: deportivo1.cilindrada,
+    potencia: deportivo1.potencia,
  }
  localStorage.setItem("vehiculo",JSON.stringify(vehiculoObjeto))
 console.log(JSON.parse(localStorage.getItem("vehiculo")))
@@ -56,4 +56,5 @@ console.log(JSON.parse(localStorage.getItem("vehiculo")))
 localStorage.removeItem('anioFabricacion')
 localStorage.removeItem('cilindrada')
 
-localStorage.clear()
+/* localStorage.clear()
+ */
