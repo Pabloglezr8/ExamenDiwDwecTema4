@@ -1,3 +1,6 @@
+ //Autor: Pablo Gonzalez Ruiz
+ //https://github.com/Pabloglezr8/ExamenDiwDwecTema4.git
+ 
  import { Vehiculo } from "./vehículo.js";
  import { Deportivo } from "./deportivo.js";
  
