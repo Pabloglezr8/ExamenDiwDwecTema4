@@ -1,0 +1,13 @@
+@font-face {
+    font-family: Mulish;
+    src: url(/assets/fonts/Mulish-Italic-VariableFont_wght.ttf);
+}
+
+body{
+    background-image: url(/assets/imgs/5053309.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Mulish;
+    color: white;
+}
